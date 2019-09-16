@@ -31,7 +31,17 @@ public class EvaluationService {
 	 */
 	public String acronym(String phrase) {
 		// TODO Write an implementation for this method declaration
-		return null;
+
+		boolean st=false;
+		String teststring="";
+		int n;
+		n=phrase.length();
+		
+		for (int e=0;e < n; e++) {
+			
+		}
+
+		return phrase;
 	}
 
 	/**
@@ -85,17 +95,29 @@ public class EvaluationService {
 
 		public boolean isEquilateral() {
 			// TODO Write an implementation for this method declaration
-			return false;
+			boolean b=false;
+			if(sideOne == sideTwo &&  sideTwo==sideThree) {
+				b=true;
+			}
+			return b;
 		}
 
 		public boolean isIsosceles() {
 			// TODO Write an implementation for this method declaration
-			return false;
+			boolean b=false;
+			if(sideOne == sideTwo || sideTwo==sideThree    || sideOne == sideThree) {
+				b=true;
+			}
+			return b;
 		}
 
 		public boolean isScalene() {
 			// TODO Write an implementation for this method declaration
-			return false;
+			boolean b=false;
+			if(sideOne!= sideTwo && sideTwo!=sideThree && sideOne !=sideThree) {
+				b=true;
+			}
+			return b;
 		}
 
 	}
@@ -117,6 +139,13 @@ public class EvaluationService {
 	 */
 	public int getScrabbleScore(String string) {
 		// TODO Write an implementation for this method declaration
+		char onePoint[] ;
+		char twoPoints[];
+		char threePoints[];
+		char fourPoints[];
+		char fivePoints[];
+		char eightPoints[];
+		char tenPoints[];
 		return 0;
 	}
 
@@ -416,11 +445,12 @@ public class EvaluationService {
 	 */
 	public boolean isValidIsbn(String string) {
 		// TODO Write an implementation for this method declaration
+		
 		return false;
 	}
 
 	/**
-	 * 16. Determine if a sentence is a pangram. A pangram (Greek: παν γράμμα, pan
+	 * 16. Determine if a sentence is a pangram. A pangram (Greek: παν γ�άμμα, pan
 	 * gramma, "every letter") is a sentence using every letter of the alphabet at
 	 * least once. The best known English pangram is:
 	 * 
